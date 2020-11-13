@@ -1,0 +1,51 @@
+alias update='brew update; brew upgrade; brew cleanup'
+alias rm='rm_trash'
+
+alias grep='grep --color'
+alias egrep='egrep --color'
+alias fgrep='fgrep --color'
+
+# git alias
+alias gt='git'
+alias gi='git'
+alias gti='git'
+alias ga='git add'
+alias gs='git status'
+alias gd='git diff'
+alias gc='git commit'
+alias gg='git log --all --decorate --oneline --graph'
+
+# ls alias
+alias s='ls'
+alias sl='ls'
+alias a='ls -a'
+alias la='ls -a'
+alias ll='ls -l'
+alias al='ls -al'
+alias lla='ls -la'
+alias lal='ls -al'
+
+# tmux alias
+alias tl='tmux ls'
+alias ts='tmux ls'
+alias ta='tmux a -t'
+alias ts='tmux new -s'
+alias tn='tmux new'
+
+# other alias
+alias c='cd'
+alias t='tree'
+alias h='htop'
+alias g='gtop'
+alias e='echo'
+alias w='which'
+alias d='df -h'
+alias du='du -h'
+
+# vim alias
+alias v='vim'
+alias vi='vim'
+alias i='vim'
+
+alias pp='fzf --preview '"'"'[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (highlight -O ansi -l {} || coderay {} || rougify {} || cat {}) 2> /dev/null | head -500'"'"
+

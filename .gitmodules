@@ -1,0 +1,12 @@
+[submodule "msieve"]
+	path = msieve
+	url = https://github.com/indestinee/msieve
+[submodule "Fastrun"]
+	path = Fastrun
+	url = https://github.com/indestinee/Fastrun.git
+[submodule "secret"]
+	path = secret
+	url = https://github.com/indestinee/secret
+[submodule "testdisk"]
+	path = testdisk
+	url = https://github.com/cgsecurity/testdisk

@@ -1,0 +1,89 @@
+snippet utf
+# -*- coding: utf-8 -*-
+endsnippet
+
+snippet np "import numpy as np" b
+import numpy as np
+endsnippet
+
+snippet cv "import cv" b
+import cv2
+endsnippet
+
+snippet pkl "import pickle" b
+import pickle
+endsnippet
+
+snippet arg "import arg" b
+import argparse
+endsnippet
+
+snippet json "import json" b
+import json
+endsnippet
+
+snippet eic "eic" b
+from eic_utils import colorful_print as cp
+from eic_utils import procedure
+endsnippet
+
+snippet args "args" b
+def get_args():
+    """${1:Gets arguments.}"""
+
+    parser = argparse.ArgumentParser(
+        description='${2:Description.}')
+    parser.add_argument('$3')
+    return parser.parse_args()
+endsnippet
+
+snippet time "time" b
+def get_cur_time():
+    return time.strftime("%Y/%m/%d %H:%M:%S", time.localtime())
+endsnippet
+
+snippet op "open" b
+with open(${1:path}, ${2:'r'}) as f:
+	${3:pass}
+endsnippet
+
+snippet hr "half resize" b
+def half_resize(img, t=1):
+    for i in range(t):
+        img = cv2.resize(img, (img.shape[1] >> 1, img.shape[0] >> 1))
+    return img
+endsnippet
+
+snippet main "main" b
+def main():
+    ${1:pass}
+
+if __name__ == '__main__':
+	main()
+endsnippet
+
+snippet temp "template" b
+import argparse
+
+def get_args():
+    """${1:Gets arguments.}"""
+
+    parser = argparse.ArgumentParser(
+        description='${2:Description.}')
+    parser.add_argument('$3')
+    return parser.parse_args()
+
+def main():
+    args = get_args()
+    ${4:pass}
+
+if __name__ == '__main__':
+	main()
+endsnippet
+
+snippet color "color" b
+red = (0, 0, 255)
+green = (0, 255, 0)
+yellow = (0, 255, 255)
+blue = (255, 0, 0)
+endsnippet

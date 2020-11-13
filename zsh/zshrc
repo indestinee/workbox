@@ -1,0 +1,37 @@
+export ZSH=$HOME/.oh-my-zsh
+export LANG=en_US.UTF-8
+
+
+ZSH_THEME="ys"
+plugins=(
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
+
+source $ZSH/oh-my-zsh.sh
+unsetopt nomatch
+
+[ -f ~/.zsh_aliases ] && source ~/.zsh_aliases
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# local frequent path
+export github=~/Code/Github
+export projects=~/Code/Projects
+export contest=~/Code/Contest
+export workbox=$projects/workbox
+export fastrun=$workbox/fastrun
+export PATH=$fastrun/bin:/usr/local/bin:$PATH
+
+export zsh=~/.zshrc
+export vim=~/.vimrc
+export profile=~/.bash_profile
+export hosts=/etc/hosts
+export snip=~/.vim/my-snippets
+
+# homebrew qinghua source
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+
+# pip qinghua source
+export qinghua=https://pypi.tuna.tsinghua.edu.cn/simple
+
